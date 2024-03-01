@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAF1EA"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="221dp"
+            android:src="@drawable/pokemon">
+
+        </ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:hint="Find a pokémon...">
+
+
+            </AutoCompleteTextView>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:text="Go">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/pokemonimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="120dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/pokemonname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="120dp"
+            android:textSize="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/pokemontypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="120dp"
+            android:textSize="30dp">
+
+        </TextView>
+
+        <ListView
+            android:id="@+id/pokemoninfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="120dp">
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
